@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="title">Dyslexia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom_landing.css">
+    <script src="js/switch.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/shuffle.js"></script>
+    <script src="js/audio.js"></script>
+</head>
+
+<body>
+    <video playsinline autoplay muted loop>
+    <source src="vid/IMG_0160.MOV">
+   </video>
+    <div class="container">
+        <div id="badfood_gate"></div>
+
+        <script>
+        document.getElementById("badfood_gate").insertAdjacentHTML("beforeend",badfood);
+        activate_audio(audio_for_badfood);
+        setSwitches(badfood);
+        </script>
+    </div>
+</body>
+
+</html>
